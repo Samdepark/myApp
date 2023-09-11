@@ -1,0 +1,62 @@
+openapi: 3.0.3
+info:
+  title: FullStock Traders
+  version: 0.0.0
+paths:
+  /api/SignIn/:
+    post:
+      operationId: api_SignIn_create
+      tags:
+      - api
+      security:
+      - basicAuth: []
+      - cookieAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /api/signOut/:
+    post:
+      operationId: api_signOut_create
+      tags:
+      - api
+      security:
+      - basicAuth: []
+      - cookieAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /api/signup/:
+    post:
+      operationId: api_signup_create
+      tags:
+      - api
+      security:
+      - basicAuth: []
+      - cookieAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /api/user/:
+    get:
+      operationId: api_user_retrieve
+      tags:
+      - api
+      security:
+      - basicAuth: []
+      - cookieAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: sessionid

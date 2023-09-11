@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-
+    'drf_spectacular',
     "Authentication",
 ]
 
@@ -76,7 +76,12 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
-    ]
+    ],
+    "DEFAULT_SCHEMA_CLASS":"drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "FullStock Traders",
 }
 
 WSGI_APPLICATION = 'FullStock_traders.wsgi.application'
