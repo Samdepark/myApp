@@ -1,0 +1,7 @@
+[packages]
+django-allAuth
+djangorestframework
+django-cors-headers
+corsheaders
+django-countries
+django

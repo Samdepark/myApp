@@ -6,3 +6,8 @@ class UserAdmin(admin.ModelAdmin):
     
 
 admin.site.register(User)
+from .models import Item, OrderItem, Order
+
+admin.site.register(Item)
+admin.site.register(Order)
+admin.site.register(OrderItem)
