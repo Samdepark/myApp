@@ -1,5 +1,11 @@
-.container-fluid{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navbar {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
